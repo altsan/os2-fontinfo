@@ -1,0 +1,28 @@
+#include <os2.h>
+#include "resource.h"
+
+ICON ID_FONTINFO    "program.ico"
+
+MENU ID_FONTINFO
+BEGIN
+    SUBMENU "~File",                                IDM_FILE
+    BEGIN
+        MENUITEM "~Open\tCtrl+O",                   ID_OPEN,            MIS_TEXT
+        MENUITEM SEPARATOR
+        MENUITEM "E~xit\tF3",                       ID_QUIT,            MIS_TEXT
+    END
+    SUBMENU "~Help",                                IDM_HELP
+    BEGIN
+        MENUITEM "Product information",             ID_ABOUT,           MIS_TEXT
+    END
+END
+
+ACCELTABLE ID_FONTINFO
+BEGIN
+    VK_F3,      ID_QUIT,        VIRTUALKEY
+    "o",        ID_OPEN,        CHAR, CONTROL
+    "O",        ID_OPEN,        CHAR, CONTROL
+END
+
+RCINCLUDE "fontinfo.dlg"
+

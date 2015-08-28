@@ -1,0 +1,8 @@
+FontInfo
+
+  Simple graphical font inspector for OS/2.  Displays font name entries, included 
+  character maps, and includes a glyph preview feature.
+
+  Based in part on the FreeType 2 library.
+
+  Released under the 3-clause BSD license; see the file LICENSE for details.

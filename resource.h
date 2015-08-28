@@ -1,0 +1,20 @@
+#define IDM_FILE                    10
+#define ID_OPEN                     11
+#define ID_CMAP                     12
+#define ID_OS2                      13
+#define ID_POST                     14
+#define ID_KERN                     15
+#define ID_QUIT                     19
+#define IDM_HELP                    90
+#define ID_ABOUT                    99
+
+#define ID_FONTINFO                 100
+#define IDD_NAMES                   101
+#define IDD_PREVIEW                 103
+#define IDD_INDEX                   105
+#define IDD_TOTAL                   106
+#define ID_NEXT                     107
+#define ID_PREV                     108
+#define IDD_NAMESCROLL              109
+#define IDD_CMAPS                   104
+#define IDD_FONTNAME                102

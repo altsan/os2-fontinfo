@@ -1,0 +1,24 @@
+#ifndef OS2_INCLUDED
+   #include <os2.h>
+#endif
+DLGINCLUDE 1 "\programming\c\fontinfo\resource.h"
+
+DLGTEMPLATE ID_FONTINFO LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Font Information", ID_FONTINFO, 12, 1, 330, 230, WS_VISIBLE,
+            FCF_SYSMENU | FCF_TITLEBAR | FCF_MINBUTTON | FCF_TASKLIST
+    BEGIN
+        CONTAINER       IDD_NAMES, 2, 94, 326, 115, CCS_SINGLESEL |
+                        CCS_MINIRECORDCORE | WS_GROUP
+                        PRESPARAMS PP_FONTNAMESIZE, "8.Helv"
+        CONTAINER       IDD_CMAPS, 2, 2, 145, 88, CCS_SINGLESEL |
+                        CCS_MINIRECORDCORE | WS_GROUP
+                        PRESPARAMS PP_FONTNAMESIZE, "8.Helv"
+        CONTROL         "", IDD_PREVIEW, 152, 16, 176, 74, "GlyphPreview",
+                        WS_GROUP | WS_VISIBLE
+        RTEXT           "Glyph:", -1, 181, 4, 41, 8, DT_VCENTER
+        SPINBUTTON      IDD_INDEX, 224, 4, 33, 12, SPBS_NUMERICONLY |
+                        SPBS_MASTER | WS_GROUP
+        CTEXT           "", IDD_FONTNAME, 2, 211, 325, 8
+    END
+END
